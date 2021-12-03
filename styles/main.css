@@ -1,0 +1,249 @@
+/* DEVELOPER: Felipe Furtado, IS117-001, Spring 2021 */
+
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+ font-family: 'Inconsolata', monospace;
+
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #749EB2;
+    color: #fff;
+}
+.nav-links a {
+    color: #fff;
+}
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li:hover {
+    background-color: #C3E0E5;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+.dropdown {
+    background-color: #C3E0E5;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+
+}
+.dropdown li + li {
+    margin-top: 10px;
+}
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+.dropdown li:hover {
+    background-color: #C3E0E5;
+}
+.services:hover .dropdown {
+    display: block;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display:none;
+        position: absolute;
+        background-color:#C3E0E5;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color:#C3E0E5;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+    .dropdown li:hover {
+        background-color: #C3E0E5;
+    }
+}
+.round_left {
+    border-radius: 15px 0 0 15px;
+}
+
+.round_right {
+    border-radius: 0 15px 15px 0;
+}
+
+/* BODY */
+img {
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+body  {
+          background-color: #F5F5DC;
+          color: black;
+          line-height: 2;
+          margin: 0;
+}
+
+section h1 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px;
+}
+main h2 {
+    text-align:center;
+    padding-top: 2em;
+    padding-bottom: .5em;
+}
+
+main h3 {
+    text-align:center;
+    padding-top: 2em;
+}
+ol, ul {
+    padding-left: 0;
+}
+main li{
+    list-style-type: square;
+    list-style-position: inside;
+    margin-left: 25%;
+    font-size: 18px;
+    width: 50%;
+}
+
+/* CAROUSEL */
+.img-carousel {
+    padding: 0 25%;
+}
+.img-carousel img {
+    width: 100%;
+    height: 100%;
+    margin: initial;
+    object-fit: contain;
+    cursor: grab;
+}
+.slick-track {
+    display: flex !important;
+}
+.slick-slide {
+    height: inherit !important;
+}
+.slick-next:before, .slick-prev:before {
+    color: #749EB2;
+}
+
+.complication {
+    width: 20%;
+    height: 20%;
+    margin: initial;
+
+}
+
+/* CARDS */
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+
+}
+/* FOOTER */
+footer {
+
+    text-align: center;
+    background-color: #749EB2;
+}

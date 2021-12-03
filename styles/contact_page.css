@@ -1,0 +1,194 @@
+/* DEVELOPER: Felipe Furtado, IS117-001, Spring 2021 */
+
+
+h1, p {
+    text-align: center;
+}
+
+label {
+    display:block;
+    margin:1em 0 .2em;
+}
+
+input, select, textarea {
+    width:100%;
+    padding:.3em;
+    font-size:20px;
+    background-color:#fbfbfb;
+    border:solid 1px #CCC;
+    resize:vertical;
+}
+textarea {
+    min-height:180px;
+}
+
+
+input[type=submit] {
+    background:#749EB2;
+    margin:1em 0 0;
+    color:white;
+    border:none;
+    border-radius:8px;
+    transition:all .3s ease-out;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover {
+    background: #C3E0E5;
+}
+
+/* hover and focus states */
+input[type=submit]:hover,
+input[type=submit]:focus{
+    background: #C3E0E5;
+    outline:none;
+}
+
+@media screen and (min-width:600px) {
+    /*  make the form 2 columns */
+    form:after{
+        content:'';
+        display:block;
+        clear:both;
+    }
+    .column{
+        width:50%;
+        padding:1em;
+        float:left;
+    }
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #749EB2;
+    color: #fff;
+}
+.nav-links a {
+    color: #fff;
+}
+
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li:hover {
+    background-color: #C3E0E5;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+.dropdown {
+    background-color: #C3E0E5;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+.dropdown li + li {
+    margin-top: 10px;
+}
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+.dropdown li:hover {
+    background-color: #C3E0E5;
+}
+.services:hover .dropdown {
+    display: block;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display:none;
+        position: absolute;
+        background-color:#C3E0E5;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color:#C3E0E5;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+    .dropdown li:hover {
+        background-color: #C3E0E5;
+    }
+}
+.round_left {
+    border-radius: 15px 0 0 15px;
+}
+
+.round_right {
+    border-radius: 0 15px 15px 0;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+body {
+    background-color: #F5F5DC;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #749EB2;
+}

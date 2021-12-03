@@ -1,0 +1,177 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/scrollbar.scss">
+    <title>TypeMaster</title>
+    <link rel="shorcut icon" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+<nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">Type-Master</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+        <!-- CHECKBOX BYPASS -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+            <li><a href="index.html" class="round_left">Typing Lessons</a></li>
+            <li><a href="HTML/typing_practice.html">Typing Practice</a></li>
+            <li><a href="HTML/typing_speed_test.html">Typing Speed Test</a></li>
+                <!-- DROPDOWN MENU -->
+            <li class="services">
+                <a href="HTML/contact.html">Contact Page</a>
+                    <ul class="dropdown">
+                        <li><a href="HTML/about.html">About Me</a></li>
+                    </ul>
+          </li>
+
+        </div>
+    </ul>
+</nav>
+
+</header><!-- header role="banner" -->
+
+<main>
+    <section>
+        <h1>Importance of touch typing</h1>
+        <p><strong>Touch typing</strong> is a technique that helps you type faster and more efficiently by using all your fingers.
+        Typing with this technique is important because it can greatly improve your productivity, especially
+        if you have a type-intensive job, like a programmer or a writer.</p>
+        <p>Using this technique allows you to create a structure on where you have to place different fingers
+        on specific areas on your keyboard. </p>
+        <p>You are using all your 10 fingers, and each one is in charge of a section or a column on the keyboard.
+        And it all starts with the <strong>Home Row.</strong></p>
+        <p>Have you ever wondered why there are little bumps on the "F" and "J" keys? That's for you to figure out if your index fingers
+        are on the home row or not.</p>
+
+        <p>Starting from the home row, every finger is assigned a section on the keyboard, like in the image below.</p>
+
+        <!-- CAROUSEL -->
+        <div class="img-carousel">
+            <div class="img-carousel-wrapper">
+                <img src="images/keyboard_fingerposition.jpg" alt="Back Pain" />
+                <img src="images/incorrect_posture.jpg" alt="Bad Posture" />
+                <img src="images/touch_typing.gif" alt="Wrist Injury" />
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('.img-carousel-wrapper').slick({
+                    arrows: true,
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            });
+        </script>
+
+        <h2>Common mistakes when touch typing</h2>
+
+        <p>There are some mistakes that people are doing when learning how to touch type and we’ll go briefly through the most popular ones. </p>
+        <p>The most common one is crossing your fingers on the letters “Y” and “B”.
+            For the “Y”, you should always use the right-hand index finger, but some people are used to pressing it with the other index.</p>
+        <p>The same thing happens with “B” where you are supposed to press it with your left-hand index finger but it’s commonly pressed with your right index.</p>
+        <p>The second most common mistake when learning how to touch type is using the wrong side modifiers.</p>
+        <p>If for example, you want to press “Shift” + “A”, you should use the right-hand shift, instead of the left one.</p>
+        <p>The reason you should learn to use the modifiers on both sides appropriately becomes more obvious when you have to press more complex strings of keys,
+            like “Ctrl” + “Alt” + “A”. If you were to press all the keys on your left side, you will force your hand in a weird position that will slow you down.
+            In this case, you should use “Ctrl” and “Alt” from the right side of the keyboard and press A with your left.</p>
+
+        <h2>Learning to touch type</h2>
+        <p>Now that we learned what touch typing is, let's move on to how to actually develop this important skill</p>
+        <p>The most important thing in your learning process is to <strong>learn the technique first</strong>, and let the speed come naturally afterward.
+        If you are rushing through it, it won't work. Take your time and do it properly. </p>
+
+        <p>Curve your fingers a little and put them on the ASDF and JKL; keys which are located in the middle row of the letter keys. The
+        <strong>Home row</strong> is important because you will always start from these keys and always return to them.</p>
+        <p>Don't look at the keys when you type. Just slide your fingers around until they find the home row marking.</p>
+        <p>Limit your hand and finger movement only to what is necessary to press a specific key.
+        Keep your hands and fingers close to the base position.
+        This improves typing speed and reduces stress on the hands.</p>
+        <p>Pay attention to ring fingers and little fingers, since they are considerably underdeveloped.</p>
+
+        <h2>Proper Typing Posture</h2>
+        <p>With a majority of careers now requiring significant time behind the computer, ensuring that you have proper typing posture is more important than ever.
+            However, typing posture is so much more than just the placement of your fingers; appropriate typing posture involves your entire body from the placement of your feet to the height of your computer monitor.
+            Below we will touch on every element of proper typing posture – including equipment and tools you should be using to improve your typing workflow.</p>
+
+        <p><strong>Proper Typing Posture entails:</strong></p>
+
+        <ul>
+            <li>Keeping your feet flat on the ground and your neck and back straight.</li>
+            <li>Adjusting your elbows to an angle between 90 and 110 degrees.</li>
+            <li>Keeping your wrists in a neutral stance.</li>
+            <li>Moving your monitor so that the top of your screen is at eye-level.</li>
+            <li>Adding appropriate ergonomic typing accessories.</li>
+        </ul>
+
+
+        <h2>Complications of Bad Posture</h2>
+
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h3>Back Pain</h3>
+                    <p>Nerd Neck</p>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Arthritis</h3>
+                    <p>Joint Inflammation</p>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Rounded Shoulders</h3>
+                    <p>Impact on appearance and health</p>
+
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Pot Belly</h3>
+                    <p>Obesity</p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+</main>
+<footer><strong>&#169; Felipe Furtado, 2021 <a href="https://www.youtube.com/watch?v=BBJa32lCaaY">Terms of Use</a></strong></footer>
+</body>
+</html>
+
+<!-- DEVELOPER: Felipe Furtado, IS117-001, Spring 2021 ->
